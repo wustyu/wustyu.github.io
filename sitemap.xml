@@ -3,15 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://wustyu.github.io/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wustyu.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wustyu.github.io/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://wustyu.github.io/categories/nvim/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wustyu.github.io/p/nvim%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wustyu.github.io/post/</loc>
+    <lastmod>2025-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wustyu.github.io/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wustyu.github.io/categories/test/</loc>
@@ -25,8 +31,6 @@
   </url><url>
     <loc>https://wustyu.github.io/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wustyu.github.io/p/</loc>
   </url><url>
     <loc>https://wustyu.github.io/links/</loc>
   </url><url>

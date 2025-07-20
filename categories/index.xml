@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Jeeyang</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://wustyu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://wustyu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Nvim</title>
+        <link>https://wustyu.github.io/categories/nvim/</link>
+        <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://wustyu.github.io/categories/nvim/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Test</title>
         <link>https://wustyu.github.io/categories/test/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
