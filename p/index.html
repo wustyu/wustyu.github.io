@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="-&ndash;\ntitle: macOS Neovim 配置完整指南\ndescription: macOS Neovim 配置完整指南\ndate: 2025-07-20\ncategories:\n\u200b - nvim\n-&ndash;\nmacOS Neovim 配置完整指南 本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。\n目录 1. 安装 Neovim 2. 创建配置目录结构 3. 基本配置文件 4. 插件管理器配置 5. 插件配置 6. 启动和使用 7. 常用快捷键 8. 故障排除 1. 安装 Neovim 使用 Homebrew 安装（推荐） 1 2 3 4 5 6 7 8 # 安装 Homebrew（如果还没有） /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; # 安装 Neovim brew install neovim # 验证安装 nvim --version 其他安装方式 1 2 3 4 5 6 7 # 使用 MacPorts sudo port install neovim # 直接下载二进制文件 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-macos.tar.gz tar xzf nvim-macos.tar.gz ./nvim-macos/bin/nvim 2. 创建配置目录结构 Neovim 的配置文件位于 ~/.config/nvim/ 目录：\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 1 2 3 4 5 6 7 8 9 10 11 12 13 --- title: &#34;macOS Neovim 配置完整指南&#34; description: &#34;macOS Neovim 配置完整指南&#34; date: 2025-07-20 categories: - nvim tags: - neovim - macos - 配置 - 编辑器 draft: false --- macOS Neovim 配置完整指南 本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。\n">
 <title></title>
 
 <link rel='canonical' href='https://wustyu.github.io/p/'>
 
 <link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="">
-<meta property='og:description' content="-&ndash;\ntitle: macOS Neovim 配置完整指南\ndescription: macOS Neovim 配置完整指南\ndate: 2025-07-20\ncategories:\n\u200b - nvim\n-&ndash;\nmacOS Neovim 配置完整指南 本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。\n目录 1. 安装 Neovim 2. 创建配置目录结构 3. 基本配置文件 4. 插件管理器配置 5. 插件配置 6. 启动和使用 7. 常用快捷键 8. 故障排除 1. 安装 Neovim 使用 Homebrew 安装（推荐） 1 2 3 4 5 6 7 8 # 安装 Homebrew（如果还没有） /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; # 安装 Neovim brew install neovim # 验证安装 nvim --version 其他安装方式 1 2 3 4 5 6 7 # 使用 MacPorts sudo port install neovim # 直接下载二进制文件 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-macos.tar.gz tar xzf nvim-macos.tar.gz ./nvim-macos/bin/nvim 2. 创建配置目录结构 Neovim 的配置文件位于 ~/.config/nvim/ 目录：\n">
+<meta property='og:description' content=" 1 2 3 4 5 6 7 8 9 10 11 12 13 --- title: &#34;macOS Neovim 配置完整指南&#34; description: &#34;macOS Neovim 配置完整指南&#34; date: 2025-07-20 categories: - nvim tags: - neovim - macos - 配置 - 编辑器 draft: false --- macOS Neovim 配置完整指南 本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。\n">
 <meta property='og:url' content='https://wustyu.github.io/p/'>
 <meta property='og:site_name' content='jeeyang&#39;s blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' />
 <meta name="twitter:title" content="">
-<meta name="twitter:description" content="-&ndash;\ntitle: macOS Neovim 配置完整指南\ndescription: macOS Neovim 配置完整指南\ndate: 2025-07-20\ncategories:\n\u200b - nvim\n-&ndash;\nmacOS Neovim 配置完整指南 本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。\n目录 1. 安装 Neovim 2. 创建配置目录结构 3. 基本配置文件 4. 插件管理器配置 5. 插件配置 6. 启动和使用 7. 常用快捷键 8. 故障排除 1. 安装 Neovim 使用 Homebrew 安装（推荐） 1 2 3 4 5 6 7 8 # 安装 Homebrew（如果还没有） /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; # 安装 Neovim brew install neovim # 验证安装 nvim --version 其他安装方式 1 2 3 4 5 6 7 # 使用 MacPorts sudo port install neovim # 直接下载二进制文件 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-macos.tar.gz tar xzf nvim-macos.tar.gz ./nvim-macos/bin/nvim 2. 创建配置目录结构 Neovim 的配置文件位于 ~/.config/nvim/ 目录：\n">
+<meta name="twitter:description" content=" 1 2 3 4 5 6 7 8 9 10 11 12 13 --- title: &#34;macOS Neovim 配置完整指南&#34; description: &#34;macOS Neovim 配置完整指南&#34; date: 2025-07-20 categories: - nvim tags: - neovim - macos - 配置 - 编辑器 draft: false --- macOS Neovim 配置完整指南 本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -377,14 +377,39 @@
     <section class="article-content">
     
     
-    <p>-&ndash;</p>
-<p>title: macOS Neovim 配置完整指南</p>
-<p>description: macOS Neovim 配置完整指南</p>
-<p>date: 2025-07-20</p>
-<p>categories:</p>
-<p>​    - nvim</p>
-<p>-&ndash;</p>
-<h1 id="macos-neovim-配置完整指南">macOS Neovim 配置完整指南
+    <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;macOS Neovim 配置完整指南&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;macOS Neovim 配置完整指南&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2025-07-20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">nvim</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">neovim</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">macos</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">编辑器</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="macos-neovim-配置完整指南">macOS Neovim 配置完整指南
 </h1><p>本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。</p>
 <h2 id="目录">目录
 </h2><ul>
