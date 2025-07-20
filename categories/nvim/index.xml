@@ -8,11 +8,11 @@
         <language>zh-cn</language>
         <copyright>Jeeyang</copyright>
         <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://wustyu.github.io/categories/nvim/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>nvim配置</title>
-        <link>https://wustyu.github.io/p/nvim%E9%85%8D%E7%BD%AE/</link>
+        <title>macos nvim配置</title>
+        <link>https://wustyu.github.io/p/macos-nvim%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://wustyu.github.io/p/nvim%E9%85%8D%E7%BD%AE/</guid>
+        <guid>https://wustyu.github.io/p/macos-nvim%E9%85%8D%E7%BD%AE/</guid>
         <description>&lt;h1 id=&#34;macos-neovim-配置完整指南&#34;&gt;macOS Neovim 配置完整指南
 &lt;/h1&gt;&lt;p&gt;本指南将帮助你在 macOS 上配置一个功能完善的 Neovim 环境，包含现代化的 Lua 配置。&lt;/p&gt;
 &lt;h2 id=&#34;目录&#34;&gt;目录
